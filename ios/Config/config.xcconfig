@@ -1,0 +1,8 @@
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_IDENTIFIER)$(BUNDLE_IDENTIFIER_APPEND)
+
+BUNDLE_DISPLAY_NAME = RN Docs
+BUNDLE_IDENTIFIER = com.itvisors.test.nativefiledocuments
+
+RUNTIME_URL = https:\/\/nativefiledocument-sandbox.mxapps.io
+
+PRODUCT_NAME = RnDocs
