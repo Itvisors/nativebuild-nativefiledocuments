@@ -42,21 +42,21 @@
         {
             "title": "Location - Always Usage",
             "name": "NSLocationAlwaysUsageDescription",
-            "purpose": "We only access your location when the app is running",
+            "purpose": "To use that feature, the app needs access to your location.",
             "platform": "ios",
             "required": true
         },
         {
             "title": "Location - When In Use Usage",
             "name": "NSLocationWhenInUseUsageDescription",
-            "purpose": "We only access your location when the app is running",
+            "purpose": "To use that feature, the app needs access to your location.",
             "platform": "ios",
             "required": true
         },
         {
             "title": "Location - Always And When in Use Usage",
             "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
-            "purpose": "We only access your location when the app is running",
+            "purpose": "To use that feature, the app needs access to your location.",
             "platform": "ios",
             "required": true
         },
@@ -119,6 +119,6 @@
         }
     },
     "appVersion": "1.0.0",
-    "buildNumber": 13,
+    "buildNumber": 15,
     "runtimeUrl": "https://nativefiledocument-sandbox.mxapps.io"
 }

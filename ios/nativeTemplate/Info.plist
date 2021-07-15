@@ -26,7 +26,7 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>13</string>
+    <string>15</string>
     <key>CodePushKey</key>
     <string/>
     <key>GoogleMapsApiKey</key>
@@ -47,11 +47,11 @@
       </dict>
     </dict>
     <key>NSLocationAlwaysUsageDescription</key>
-    <string>We only access your location when the app is running</string>
+    <string>To use that feature, the app needs access to your location.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We only access your location when the app is running</string>
+    <string>To use that feature, the app needs access to your location.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>We only access your location when the app is running</string>
+    <string>To use that feature, the app needs access to your location.</string>
     <key>Runtime url</key>
     <string>$(RUNTIME_URL)</string>
     <key>TargetName</key>
