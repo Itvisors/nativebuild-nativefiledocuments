@@ -49,7 +49,7 @@
         {
             "title": "Location - When In Use Usage",
             "name": "NSLocationWhenInUseUsageDescription",
-            "purpose": "The app can access your location",
+            "purpose": "We only access your location when the app is running",
             "platform": "ios",
             "required": true
         },
@@ -59,18 +59,6 @@
             "purpose": "We only access your location when the app is running",
             "platform": "ios",
             "required": true
-        },
-        {
-            "title": "Camera",
-            "name": "android.permission.CAMERA",
-            "platform": "android",
-            "required": false
-        },
-        {
-            "title": "Fine Location",
-            "name": "android.permission.ACCESS_FINE_LOCATION",
-            "platform": "android",
-            "required": false
         },
         {
             "title": "Camera Usage",
@@ -84,6 +72,18 @@
             "name": "NSPhotoLibraryUsageDescription",
             "purpose": "You can choose pictures to upload them",
             "platform": "ios",
+            "required": false
+        },
+        {
+            "title": "Fine Location",
+            "name": "android.permission.ACCESS_FINE_LOCATION",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Camera",
+            "name": "android.permission.CAMERA",
+            "platform": "android",
             "required": false
         }
     ],
@@ -119,6 +119,6 @@
         }
     },
     "appVersion": "1.0.0",
-    "buildNumber": 8,
+    "buildNumber": 13,
     "runtimeUrl": "https://nativefiledocument-sandbox.mxapps.io"
 }
