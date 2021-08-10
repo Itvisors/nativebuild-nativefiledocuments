@@ -61,6 +61,12 @@
             "required": true
         },
         {
+            "title": "Camera",
+            "name": "android.permission.CAMERA",
+            "platform": "android",
+            "required": false
+        },
+        {
             "title": "Camera Usage",
             "name": "NSCameraUsageDescription",
             "purpose": "You can take pictures to upload them",
@@ -77,12 +83,6 @@
         {
             "title": "Fine Location",
             "name": "android.permission.ACCESS_FINE_LOCATION",
-            "platform": "android",
-            "required": false
-        },
-        {
-            "title": "Camera",
-            "name": "android.permission.CAMERA",
             "platform": "android",
             "required": false
         }
@@ -119,6 +119,6 @@
         }
     },
     "appVersion": "1.0.0",
-    "buildNumber": 15,
+    "buildNumber": 19,
     "runtimeUrl": "https://nativefiledocument-sandbox.mxapps.io"
 }

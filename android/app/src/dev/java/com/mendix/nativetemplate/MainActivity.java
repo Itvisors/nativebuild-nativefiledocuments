@@ -43,8 +43,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
-    static private int CAMERA_REQUEST = 1;
-    private Executor httpExecutor = Executors.newSingleThreadExecutor();
+    static private final int CAMERA_REQUEST = 1;
+    private final Executor httpExecutor = Executors.newSingleThreadExecutor();
     private ZXingScannerView cameraView;
     private AppPreferences appPreferences;
     private Button launchAppButton;
@@ -75,23 +75,33 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
         appUrl.setText(appPreferences.getAppUrl());
         devModeCheckBox.setChecked(appPreferences.isDevModeEnabled());
 
-        if (getIntent().getData() != null && getIntent().getAction() != null) {
-            this.launchApp(appPreferences.getAppUrl(), getIntent());
-        }
+        cameraView.setResultHandler(this);
+        startCameraWithPermissions();
+
+        handleLaunchWithData(getIntent());
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        this.launchApp(appPreferences.getAppUrl(), intent);
+        handleLaunchWithData(intent);
+    }
+
+    private void handleLaunchWithData(Intent intent) {
+        if (intent.getData() != null) {
+            launchApp(appPreferences.getAppUrl(), intent);
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onResume() {
         super.onResume();
-        cameraView.setResultHandler(this);
-        startCameraWithPermissions();
+        try {
+            cameraView.startCamera();
+        } catch (Exception e) {
+            // No permissions
+        }
     }
 
     @Override
@@ -190,23 +200,20 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
                 disableUIInteraction(false);
                 return;
             }
-
             boolean clearData = clearDataCheckBox.isChecked();
-            Intent intent = new Intent(this, MendixReactActivity.class);
             boolean devModeEnabled = devModeCheckBox.isChecked();
+            String runtimeUrl = AppUrl.forRuntime(url);
+
+            appPreferences.setAppUrl(AppUrl.forRuntime(runtimeUrl));
+
+            Intent intent = new Intent(this, MendixReactActivity.class);
             MxConfiguration.WarningsFilter warningsFilter = devModeEnabled ? MxConfiguration.WarningsFilter.partial : MxConfiguration.WarningsFilter.none;
-            MendixApp mendixApp = new MendixApp(AppUrl.forRuntime(url), warningsFilter, devModeEnabled);
+            MendixApp mendixApp = new MendixApp(runtimeUrl, warningsFilter, devModeEnabled, true);
             intent.putExtra(MendixReactActivity.MENDIX_APP_INTENT_KEY, mendixApp);
             intent.putExtra(MendixReactActivity.CLEAR_DATA, clearData);
-
             if (passedIntent != null) {
-                if (passedIntent.getData() != null) {
-                    intent.setData(passedIntent.getData());
-                }
-
-                if (passedIntent.getAction() != null) {
-                    intent.setAction(passedIntent.getAction());
-                }
+                intent.setData(passedIntent.getData());
+                intent.setAction(passedIntent.getAction());
             }
 
             startActivity(intent);
