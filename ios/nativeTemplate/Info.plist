@@ -26,7 +26,7 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>19</string>
+    <string>21</string>
     <key>CodePushKey</key>
     <string/>
     <key>GoogleMapsApiKey</key>
@@ -47,7 +47,7 @@
       </dict>
     </dict>
     <key>NSCameraUsageDescription</key>
-    <string>You can take pictures to upload them</string>
+    <string>The camera can be used to open apps by scanning a QR code.</string>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>To use that feature, the app needs access to your location.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
@@ -55,7 +55,7 @@
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>To use that feature, the app needs access to your location.</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>You can choose pictures to upload them</string>
+    <string>To use that feature, the app needs access to your photo library.</string>
     <key>Runtime url</key>
     <string>$(RUNTIME_URL)</string>
     <key>TargetName</key>

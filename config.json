@@ -69,21 +69,15 @@
         {
             "title": "Camera Usage",
             "name": "NSCameraUsageDescription",
-            "purpose": "You can take pictures to upload them",
+            "purpose": "The camera can be used to open apps by scanning a QR code.",
             "platform": "ios",
             "required": false
         },
         {
             "title": "Photo Library Usage",
             "name": "NSPhotoLibraryUsageDescription",
-            "purpose": "You can choose pictures to upload them",
+            "purpose": "To use that feature, the app needs access to your photo library.",
             "platform": "ios",
-            "required": false
-        },
-        {
-            "title": "Fine Location",
-            "name": "android.permission.ACCESS_FINE_LOCATION",
-            "platform": "android",
             "required": false
         }
     ],
@@ -116,9 +110,12 @@
         },
         "appCenterOTA": {
             "enabled": false
+        },
+        "nativeOTA": {
+            "enabled": false
         }
     },
     "appVersion": "1.0.0",
-    "buildNumber": 19,
+    "buildNumber": 21,
     "runtimeUrl": "https://nativefiledocument-sandbox.mxapps.io"
 }
