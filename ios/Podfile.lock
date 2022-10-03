@@ -277,7 +277,7 @@ PODS:
   - React-jsinspector (0.64.2)
   - react-native-cameraroll (4.0.1):
     - React
-  - react-native-document-picker (5.2.0):
+  - react-native-document-picker (8.1.1):
     - React-Core
   - react-native-image-picker (4.0.3):
     - React-Core
@@ -287,8 +287,9 @@ PODS:
     - React-Core
   - react-native-splash-screen (3.2.0):
     - React
-  - react-native-sqlite-storage (5.0.0):
+  - react-native-sqlite-storage (5.1.3):
     - React
+    - SQLCipher
   - react-native-video (5.2.0):
     - React-Core
     - react-native-video/Video (= 5.2.0)
@@ -381,18 +382,18 @@ PODS:
     - Firebase/Messaging (~> 7.1.0)
     - React-Core
     - RNFBApp
-  - RNFileViewer (2.1.4):
+  - RNFileViewer (2.1.5):
     - React-Core
-  - RNFS (2.18.0):
-    - React
+  - RNFS (2.20.0):
+    - React-Core
   - RNGestureHandler (1.8.0):
     - React
-  - RNImageCropPicker (0.37.3):
+  - RNImageCropPicker (0.38.0):
     - React-Core
     - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.37.3)
+    - RNImageCropPicker/QBImagePickerController (= 0.38.0)
     - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.37.3):
+  - RNImageCropPicker/QBImagePickerController (0.38.0):
     - React-Core
     - React-RCTImage
     - TOCropViewController
@@ -404,18 +405,23 @@ PODS:
     - React-Core
   - RNReanimated (1.13.1):
     - React
-  - RNShare (6.2.3):
+  - RNShare (7.9.0):
     - React-Core
   - RNSVG (12.1.0):
     - React
-  - RNVectorIcons (7.1.0):
-    - React
+  - RNVectorIcons (9.2.0):
+    - React-Core
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
   - SDWebImageWebPCoder (0.6.1):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
+  - SQLCipher (4.5.2):
+    - SQLCipher/standard (= 4.5.2)
+  - SQLCipher/common (4.5.2)
+  - SQLCipher/standard (4.5.2):
+    - SQLCipher/common
   - SSZipArchive (2.4.3)
   - TOCropViewController (2.6.1)
   - Yoga (1.14.0)
@@ -447,7 +453,7 @@ DEPENDENCIES:
   - react-native-image-resizer (from `../node_modules/react-native-image-resizer`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
-  - react-native-sqlite-storage (from `../node_modules/react-native-sqlite-storage`)
+  - "react-native-sqlite-storage (from `../node_modules/@mendix/react-native-sqlite-storage`)"
   - react-native-video (from `../node_modules/react-native-video`)
   - react-native-view-shot (from `../node_modules/react-native-view-shot`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -501,6 +507,7 @@ SPEC REPOS:
     - PromisesObjC
     - SDWebImage
     - SDWebImageWebPCoder
+    - SQLCipher
     - SSZipArchive
     - TOCropViewController
 
@@ -552,7 +559,7 @@ EXTERNAL SOURCES:
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
   react-native-sqlite-storage:
-    :path: "../node_modules/react-native-sqlite-storage"
+    :path: "../node_modules/@mendix/react-native-sqlite-storage"
   react-native-video:
     :path: "../node_modules/react-native-video"
   react-native-view-shot:
@@ -639,8 +646,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  Permission-Camera: ffd449756840ddc0f6294e95d688fecaadfe238c
-  Permission-PhotoLibrary: ab3b6b959e615aa10e3638218a50d135250638ff
+  Permission-Camera: 74dc395c37a06ebe915069c5dca954c7a2a5a2e3
+  Permission-PhotoLibrary: 440f206f0d36e5951c4c9b28567f60471fdddfb5
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
@@ -653,15 +660,15 @@ SPEC CHECKSUMS:
   React-jsi: 67747b9722f6dab2ffe15b011bcf6b3f2c3f1427
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
-  react-native-cameraroll: 9d2b7c1707204d2040d2812f960c6cebdbd9f670
-  react-native-document-picker: aa3fd58d5fcc1fdbf6939510b9407d16377f5832
-  react-native-image-picker: 4089335b89b625d4e34d53fb249c48a7a791b3ea
-  react-native-image-resizer: 506412a2bdd70dde64a61e13505ce10f61a04369
-  react-native-safe-area-context: 01158a92c300895d79dee447e980672dc3fb85a6
+  react-native-cameraroll: 60ba0068826eab1c8d43146191bafd4363ea58a7
+  react-native-document-picker: f68191637788994baed5f57d12994aa32cf8bf88
+  react-native-image-picker: 474cf2c33c2b6671da53d293a16c97995f0aec15
+  react-native-image-resizer: d9fb629a867335bdc13230ac2a58702bb8c8828f
+  react-native-safe-area-context: 79fea126c6830c85f65947c223a5e3058a666937
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  react-native-sqlite-storage: ce71689c5a73b79390a1ab213555ae80979a5dc7
+  react-native-sqlite-storage: c1f73763d877b444d05dd0114843b33b2f998523
   react-native-video: a4c2635d0802f983594b7057e1bce8f442f0ad28
-  react-native-view-shot: 08c46c9e8e92f6681e8f2ffa55ac3d06e7e99070
+  react-native-view-shot: 4475fde003fe8a210053d1f98fb9e06c1d834e1c
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
   React-RCTActionSheet: af7796ba49ffe4ca92e7277a5d992d37203f7da5
   React-RCTAnimation: 6a2e76ab50c6f25b428d81b76a5a45351c4d77aa
@@ -674,31 +681,32 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNCAsyncStorage: 3eea36d9460c5159b592f9ecbe5a77f8aca98006
-  RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
-  RNCPushNotificationIOS: eaf01f848a0b872b194d31bcad94bb864299e01e
-  RNDateTimePicker: e9fcd5ecdc0c5b018871e0d178d6040dca11973c
-  RNDeviceInfo: 54401b60514387f9120ab8265be5ed9103d842b9
+  RNCAsyncStorage: 2a692bcb9b69b76a2f1a95f33db057129700af64
+  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
+  RNCPushNotificationIOS: 988c26325d0b7e7b54f818db35b8313d3a125f0c
+  RNDateTimePicker: 6f62fd42ac8b58bcc30c43ac3620e5097e8a227f
+  RNDeviceInfo: 921a809eaf9de79645a24de1c6ca90db6cb91786
   RNFastImage: e19ba191922e7dab9d932a4d59d62d76660aa222
   RNFBApp: 2b4e07dfca4cf780b9e2d61bcc21e34d890cd654
   RNFBMessaging: 483093ab71fb3de1d5b410fbf8ecdd32b84b5f78
-  RNFileViewer: 83cc066ad795b1f986791d03b56fe0ee14b6a69f
-  RNFS: 3ab21fa6c56d65566d1fb26c2228e2b6132e5e32
+  RNFileViewer: ce7ca3ac370e18554d35d6355cffd7c30437c592
+  RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
   RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
-  RNImageCropPicker: 44e2807bc410741f35d4c45b6586aedfe3da39d2
-  RNLocalize: d8025bb1ac74c0ad54155ea9862538624ebf74d8
-  RNPDF: 21c4efaaddf0320fd86773d608b0f372b562b134
-  RNPermissions: 75128bfb4c4ef92f572a8efdb8adfbfab75e8ed0
+  RNImageCropPicker: ffbba608264885c241cbf3a8f78eb7aeeb978241
+  RNLocalize: 215c419a17d7585eb7a63c748ebfd042e0cb2c3d
+  RNPDF: c68cd74a3393b80f572fb62347f4efe293e01658
+  RNPermissions: c46788f4cd402287425983e04a4c9bb4356036eb
   RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
-  RNShare: 16c78aeb7a78d19e8f5597e405e87f90d91f8eb9
+  RNShare: be91a5c149585affb02c25b351bd07ba927c7006
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
-  RNVectorIcons: bc69e6a278b14842063605de32bec61f0b251a59
+  RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
+  SQLCipher: f5b4857434158b571a3ed3b10b3b43cd18ef5f67
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
-PODFILE CHECKSUM: 1a6283a7653c0da50cbd879ecaf2f25b45d5f8d1
+PODFILE CHECKSUM: d61336b3902686178f72fb1317ed524c29f2ac68
 
 COCOAPODS: 1.11.2
