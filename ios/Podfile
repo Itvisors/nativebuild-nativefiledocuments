@@ -29,9 +29,6 @@ def common_pods
   
   # Required MendixNative dependency
   pod 'SSZipArchive'
-
-  # Required MendixNative dependency
-  pod 'SSZipArchive'
 end
 
 target 'nativeTemplate' do
@@ -57,6 +54,15 @@ post_install do |installer|
           config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << "DEBUG=1"
         end
       end
+    end
+  end
+
+  # Prevent issues with XCode 14 requiring a team for pods
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings["DEVELOPMENT_TEAM"] = "K2E6Q3BZ74"
+         end
     end
   end
 end
