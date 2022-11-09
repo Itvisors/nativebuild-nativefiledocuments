@@ -77,9 +77,9 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - Permission-Camera (3.0.4):
+  - Permission-Camera (3.3.1):
     - RNPermissions
-  - Permission-PhotoLibrary (3.0.4):
+  - Permission-PhotoLibrary (3.3.1):
     - RNPermissions
   - PromisesObjC (1.2.12)
   - RCT-Folly (2020.01.13.00):
@@ -401,7 +401,7 @@ PODS:
     - React
   - RNPDF (0.13.2):
     - React
-  - RNPermissions (3.0.4):
+  - RNPermissions (3.3.1):
     - React-Core
   - RNReanimated (1.13.1):
     - React
@@ -411,6 +411,13 @@ PODS:
     - React
   - RNVectorIcons (9.2.0):
     - React-Core
+  - RNZipArchive (6.0.8):
+    - React-Core
+    - RNZipArchive/Core (= 6.0.8)
+    - SSZipArchive
+  - RNZipArchive/Core (6.0.8):
+    - React-Core
+    - SSZipArchive
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
@@ -487,6 +494,7 @@ DEPENDENCIES:
   - RNShare (from `../node_modules/react-native-share`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - RNZipArchive (from `../node_modules/react-native-zip-archive`)
   - SSZipArchive
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -626,6 +634,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  RNZipArchive:
+    :path: "../node_modules/react-native-zip-archive"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -646,8 +656,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  Permission-Camera: 74dc395c37a06ebe915069c5dca954c7a2a5a2e3
-  Permission-PhotoLibrary: 440f206f0d36e5951c4c9b28567f60471fdddfb5
+  Permission-Camera: bae27a8503530770c35aadfecbb97ec71823382a
+  Permission-PhotoLibrary: ddb5a158725b29cb12e9e477e8a5f5151c66cc3c
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
@@ -695,11 +705,12 @@ SPEC CHECKSUMS:
   RNImageCropPicker: ffbba608264885c241cbf3a8f78eb7aeeb978241
   RNLocalize: 215c419a17d7585eb7a63c748ebfd042e0cb2c3d
   RNPDF: c68cd74a3393b80f572fb62347f4efe293e01658
-  RNPermissions: c46788f4cd402287425983e04a4c9bb4356036eb
+  RNPermissions: 34d678157c800b25b22a488e4d8babb57456e796
   RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
   RNShare: be91a5c149585affb02c25b351bd07ba927c7006
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
+  RNZipArchive: 0efcb502e486178bb1e48c1fe3c8c821df2749e8
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
   SQLCipher: f5b4857434158b571a3ed3b10b3b43cd18ef5f67
