@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-zip-archive/RNZipArchive.podspec b/node_modules/react-native-zip-archive/RNZipArchive.podspec
+index c13a553..eca0a26 100644
+--- a/node_modules/react-native-zip-archive/RNZipArchive.podspec
++++ b/node_modules/react-native-zip-archive/RNZipArchive.podspec
+@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
+   s.preserve_paths = '*.js'
+ 
+   s.dependency 'React-Core'
+-  s.dependency 'SSZipArchive', '2.2.3'
++  s.dependency 'SSZipArchive'
+   s.compiler_flags = '-GCC_PREPROCESSOR_DEFINITIONS="HAVE_INTTYPES_H HAVE_PKCRYPT HAVE_STDINT_H HAVE_WZAES HAVE_ZLIB MZ_ZIP_NO_SIGNING $(inherited)"'
+ 
+   s.subspec 'Core' do |ss|
