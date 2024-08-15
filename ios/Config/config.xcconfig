@@ -6,3 +6,5 @@ BUNDLE_IDENTIFIER = com.itvisors.test.nativefiledocuments
 RUNTIME_URL = https:\/\/nativefiledocument-sandbox.mxapps.io
 
 PRODUCT_NAME = RnDocs
+
+HERMES_ENABLED = YES

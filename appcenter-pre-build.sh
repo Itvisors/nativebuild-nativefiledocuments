@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export JAVA_HOME=${JAVA_HOME_11_X64}
+export JAVA_HOME=${JAVA_HOME_17_X64}
 export PATH=${JAVA_HOME}/bin:${PATH}
 
 if [[ $SUPPORTS_MOBILE_TOOLKIT == True ]]; then
@@ -18,9 +18,6 @@ if [[ -e "$INFO_PLIST" && $IS_DEV_APP == False ]]; then
     lipo -remove x86_64 -output $LIB_PATH $LIB_PATH || true
     lipo -remove i386 -output $LIB_PATH $LIB_PATH || true
     lipo -info $LIB_PATH || true
-
-    echo "Updating Info.plist with code push key"
-    plutil -replace "CodePushKey" -string $CODE_PUSH_KEY $INFO_PLIST || true
 
     cat $INFO_PLIST
 fi

@@ -26,9 +26,7 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>40</string>
-    <key>CodePushKey</key>
-    <string/>
+    <string>41</string>
     <key>GoogleMapsApiKey</key>
     <string/>
     <key>LSRequiresIPhoneOS</key>
@@ -98,6 +96,10 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>FirebaseMessagingAutoInitEnabled</key>
+    <false/>
+    <key>FirebaseAppDelegateProxyEnabled</key>
     <false/>
   </dict>
 </plist>

@@ -6,9 +6,82 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+- We have updated the @mendix/native dependency to fix the encryption issue.
+
+## [8.2.3] - 2024-06-7
+
+- We have upgraded `@mendix/native` to 3.1.5
+
+## [8.2.2] - 2024-05-29
+
+- We have upgraded `react-native-gesture-handler` to 2.16.2
+- We have upgraded `@mendix/native` to 3.1.4
+
+## [8.2.1] - 2024-05-27
+
+- We have removed Flipper from iOS Podfile
+- We've added the support of scheduling local notifications on Android 14
+
+## [8.2.0] - 2024-05-17
+
+- We have upgraded React-navigation to version 6
+- We have added a basic privacy manifest to iOS.
+
+## [8.1.3] - 2024-05-14
+
+- We've made the switch to Xcode 15.1 for cloud builds (Appcenter), in response to the updated minimum iOS sdk requirements.
+- We have added support for Hermes
+
+## [8.1.1] - 2024-04-24
+
+- We have upgraded the @mendix/native dependency to the latest compatible version
+
+## [8.1.0] - 2024-04-24
+
+- We have resolved a build error related to Flipper on Xcode 15.3.
+- We have upgraded security-crypto dependency on Android to version 1.1.0-alpha06
+- We have upgraded @mendix/react-native-sqlite-storage to version 7.1.0 and @mendix/native to the latest compatible version
+
+## [8.0.5] - 2024-04-24
+
+- We have upgraded the @mendix/native dependency to the latest compatible version
+
+## [8.0.4] - 2024-03-29
+
+- We have removed react-native-code-push dependency. We recommend migrating to Mendix OTA instead.
+
+## [8.0.3] - 2024-02-13
+
+### Fixed
+
+- We have removed redundant launch screen
+
+## [8.0.2] - 2024-01-18
+
+### Fixed
+
+- We have fixed issues related to building with pipelines
+
+## [8.0.1] - 2024-01-17
+
+### Fixed
+
+- We updated `react-native-vector-icons` to version `10.0.3`
+
+## [8.0.0] - 2023-12-21
+
+### Added
+
+- We have upgrade react-native to version 0.72.7
+- We have upgrade node to version 18
+- We have upgrade JAVA to version 17
+
+## [7.0.9] - 2023-10-13
+
 ### Fixed
 
 - We fixed build errors caused by the recent XCode 15 update.
+- We have Updated androidManifest to support open url with links to websites whose apps are installed on the device.
 
 ## [7.0.8] - 2023-09-25
 
