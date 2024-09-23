@@ -43,9 +43,9 @@ PODS:
     - GoogleUtilities/Logger (~> 7.8)
   - FirebaseCoreExtension (10.5.0):
     - FirebaseCore (~> 10.0)
-  - FirebaseCoreInternal (10.24.0):
+  - FirebaseCoreInternal (10.29.0):
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
-  - FirebaseInstallations (10.24.0):
+  - FirebaseInstallations (10.29.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/Environment (~> 7.8)
     - GoogleUtilities/UserDefaults (~> 7.8)
@@ -85,54 +85,54 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30911.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities (7.13.0):
-    - GoogleUtilities/AppDelegateSwizzler (= 7.13.0)
-    - GoogleUtilities/Environment (= 7.13.0)
-    - GoogleUtilities/ISASwizzler (= 7.13.0)
-    - GoogleUtilities/Logger (= 7.13.0)
-    - GoogleUtilities/MethodSwizzler (= 7.13.0)
-    - GoogleUtilities/Network (= 7.13.0)
-    - "GoogleUtilities/NSData+zlib (= 7.13.0)"
-    - GoogleUtilities/Privacy (= 7.13.0)
-    - GoogleUtilities/Reachability (= 7.13.0)
-    - GoogleUtilities/SwizzlerTestHelpers (= 7.13.0)
-    - GoogleUtilities/UserDefaults (= 7.13.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.13.0):
+  - GoogleUtilities (7.13.3):
+    - GoogleUtilities/AppDelegateSwizzler (= 7.13.3)
+    - GoogleUtilities/Environment (= 7.13.3)
+    - GoogleUtilities/ISASwizzler (= 7.13.3)
+    - GoogleUtilities/Logger (= 7.13.3)
+    - GoogleUtilities/MethodSwizzler (= 7.13.3)
+    - GoogleUtilities/Network (= 7.13.3)
+    - "GoogleUtilities/NSData+zlib (= 7.13.3)"
+    - GoogleUtilities/Privacy (= 7.13.3)
+    - GoogleUtilities/Reachability (= 7.13.3)
+    - GoogleUtilities/SwizzlerTestHelpers (= 7.13.3)
+    - GoogleUtilities/UserDefaults (= 7.13.3)
+  - GoogleUtilities/AppDelegateSwizzler (7.13.3):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Environment (7.13.0):
+  - GoogleUtilities/Environment (7.13.3):
     - GoogleUtilities/Privacy
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/ISASwizzler (7.13.0):
+  - GoogleUtilities/ISASwizzler (7.13.3):
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Logger (7.13.0):
+  - GoogleUtilities/Logger (7.13.3):
     - GoogleUtilities/Environment
     - GoogleUtilities/Privacy
-  - GoogleUtilities/MethodSwizzler (7.13.0):
+  - GoogleUtilities/MethodSwizzler (7.13.3):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Network (7.13.0):
+  - GoogleUtilities/Network (7.13.3):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.13.0)":
+  - "GoogleUtilities/NSData+zlib (7.13.3)":
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (7.13.0)
-  - GoogleUtilities/Reachability (7.13.0):
+  - GoogleUtilities/Privacy (7.13.3)
+  - GoogleUtilities/Reachability (7.13.3):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/SwizzlerTestHelpers (7.13.0):
+  - GoogleUtilities/SwizzlerTestHelpers (7.13.3):
     - GoogleUtilities/MethodSwizzler
-  - GoogleUtilities/UserDefaults (7.13.0):
+  - GoogleUtilities/UserDefaults (7.13.3):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - hermes-engine (0.72.7):
     - hermes-engine/Pre-built (= 0.72.7)
   - hermes-engine/Pre-built (0.72.7)
-  - IQKeyboardManager (6.5.18)
+  - IQKeyboardManager (6.5.19)
   - libevent (2.1.12)
   - libwebp (1.3.2):
     - libwebp/demux (= 1.3.2)
@@ -458,7 +458,8 @@ PODS:
     - glog
   - react-native-cameraroll (4.0.1):
     - React
-  - react-native-document-picker (8.1.3):
+  - react-native-document-picker (9.3.1):
+    - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - react-native-image-picker (5.0.1):
     - React-Core
@@ -622,15 +623,15 @@ PODS:
   - RNGestureHandler (2.16.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNImageCropPicker (0.38.1):
+  - RNImageCropPicker (0.41.2):
     - React-Core
     - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.38.1)
-    - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.38.1):
+    - RNImageCropPicker/QBImagePickerController (= 0.41.2)
+    - TOCropViewController (~> 2.7.4)
+  - RNImageCropPicker/QBImagePickerController (0.41.2):
     - React-Core
     - React-RCTImage
-    - TOCropViewController
+    - TOCropViewController (~> 2.7.4)
   - RNLocalize (1.4.2):
     - React-Core
   - RNPDF (0.14.0):
@@ -642,34 +643,34 @@ PODS:
   - RNScreens (3.20.0):
     - React-Core
     - React-RCTImage
-  - RNShare (8.2.0):
+  - RNShare (10.2.1):
     - React-Core
   - RNSVG (12.1.0):
     - React
   - RNVectorIcons (10.0.3):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNZipArchive (6.0.9):
+  - RNZipArchive (7.0.1):
     - React-Core
-    - RNZipArchive/Core (= 6.0.9)
-    - SSZipArchive (~> 2.2)
-  - RNZipArchive/Core (6.0.9):
+    - RNZipArchive/Core (= 7.0.1)
+    - SSZipArchive (~> 2.5.5)
+  - RNZipArchive/Core (7.0.1):
     - React-Core
-    - SSZipArchive (~> 2.2)
-  - SDWebImage (5.19.1):
-    - SDWebImage/Core (= 5.19.1)
-  - SDWebImage/Core (5.19.1)
+    - SSZipArchive (~> 2.5.5)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
   - SDWebImageWebPCoder (0.6.1):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
   - SocketRocket (0.6.1)
-  - SQLCipher (4.5.6):
-    - SQLCipher/standard (= 4.5.6)
-  - SQLCipher/common (4.5.6)
-  - SQLCipher/standard (4.5.6):
+  - SQLCipher (4.6.1):
+    - SQLCipher/standard (= 4.6.1)
+  - SQLCipher/common (4.6.1)
+  - SQLCipher/standard (4.6.1):
     - SQLCipher/common
-  - SSZipArchive (2.4.3)
-  - TOCropViewController (2.7.2)
+  - SSZipArchive (2.5.5)
+  - TOCropViewController (2.7.4)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -937,16 +938,16 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 6f7430030cb6b22fe1db2e3bed782e999b76dc00
   FirebaseCore: 324b8d182d9ff7e3f6d1fa2f04b082d1c7a3e366
   FirebaseCoreExtension: d9fa427f1ae1edccf2368ce5e8d567e4c1f0ebc8
-  FirebaseCoreInternal: bcb5acffd4ea05e12a783ecf835f2210ce3dc6af
-  FirebaseInstallations: 8f581fca6478a50705d2bd2abd66d306e0f5736e
+  FirebaseCoreInternal: df84dd300b561c27d5571684f389bf60b0a5c934
+  FirebaseInstallations: 913cf60d0400ebd5d6b63a28b290372ab44590dd
   FirebaseMessaging: 35ecbbc68ff547fca80f9326c9622e79288c7149
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   GoogleAppMeasurement: 40c70a7d89013f0eca72006c4b9732163ea4cdae
   GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
-  GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
+  GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   hermes-engine: 9180d43df05c1ed658a87cc733dc3044cf90c00a
-  IQKeyboardManager: 67f92bb29b650c094c40bd11c0545b47bdd25c5b
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
@@ -969,7 +970,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 8baadae51f01d867c3921213a25ab78ab4fbcd91
   React-logger: 8edc785c47c8686c7962199a307015e2ce9a0e4f
   react-native-cameraroll: 60ba0068826eab1c8d43146191bafd4363ea58a7
-  react-native-document-picker: 958e2bc82e128be69055be261aeac8d872c8d34c
+  react-native-document-picker: 52eab29bbc53f45399b475b7a3f4e503260f1134
   react-native-image-picker: 8cb4280e2c1efc3daeb2d9d597f9429a60472e40
   react-native-image-resizer: d9fb629a867335bdc13230ac2a58702bb8c8828f
   react-native-pager-view: 40d9ec4a63ed74f8aa2f1e1bba7c1e0b4080d8a6
@@ -1007,24 +1008,24 @@ SPEC CHECKSUMS:
   RNFileViewer: ce7ca3ac370e18554d35d6355cffd7c30437c592
   RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
   RNGestureHandler: d678f94a8f74de70ce3d9f5d23eb0f97b686e943
-  RNImageCropPicker: 648356d68fbf9911a1016b3e3723885d28373eda
+  RNImageCropPicker: 771e2ca319d2cf92e04ebf334ece892ee9a6728f
   RNLocalize: 452d4118e338dee1e5ca3fac4d5a11a4ab26a46a
   RNPDF: 8526c7210ff375c29d2461c51945e2f5480f7b60
   RNPermissions: 34d678157c800b25b22a488e4d8babb57456e796
   RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
-  RNShare: b089c33619bbfb0a32bc4069c858b9274e694187
+  RNShare: 0fad69ae2d71de9d1f7b9a43acf876886a6cb99c
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   RNVectorIcons: 64e6a523ac30a3241efa9baf1ffbcc5e76ff747a
-  RNZipArchive: 68a0c6db4b1c103f846f1559622050df254a3ade
-  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  RNZipArchive: 7bb4c70d6aa2dd235212c0a4a3de0a4e237e2569
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  SQLCipher: 838309284f29953a28ad2e81d87d55ea6b7c74fd
-  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  TOCropViewController: bf38459e9da6efe414de22087ebd5c530640f4bd
+  SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
+  SSZipArchive: c69881e8ac5521f0e622291387add5f60f30f3c4
+  TOCropViewController: 80b8985ad794298fb69d3341de183f33d1853654
   Yoga: 4c3aa327e4a6a23eeacd71f61c81df1bcdf677d5
 
-PODFILE CHECKSUM: 656811f8e329abb6aa1f45d77bc0740ab0602b18
+PODFILE CHECKSUM: d499e8525149f4cd4db8ffbd03a85ad9a64e7a96
 
 COCOAPODS: 1.15.2

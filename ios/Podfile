@@ -9,7 +9,7 @@ require Pod::Executable.execute_command('node', ['-p',
 
 require_relative './mendix_utils'
 
-deployment_target = min_ios_version_supported
+deployment_target = '15.5'
 platform :ios, deployment_target
 
 prepare_react_native_project!
