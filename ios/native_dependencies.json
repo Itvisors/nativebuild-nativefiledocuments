@@ -1,11 +1,11 @@
 {
     "react-native-view-pdf": "0.14.0",
     "react-native-view-shot": "3.1.2",
-    "react-native-fs": "2.20.0",
+    "@dr.pogodin/react-native-fs": "2.26.0",
     "react-native-file-viewer": "2.1.5",
+    "react-native-image-picker": "5.0.1",
     "react-native-localize": "3.2.1",
     "react-native-permissions": "4.1.5",
-    "react-native-image-picker": "5.0.1",
     "react-native-zip-archive": "7.0.1",
     "react-native-document-picker": "9.3.1",
     "react-native-share": "11.1.0",
