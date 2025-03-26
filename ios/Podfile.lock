@@ -1304,7 +1304,7 @@ PODS:
     - React-Core
   - react-native-image-resizer (1.4.5):
     - React-Core
-  - react-native-netinfo (11.3.2):
+  - react-native-netinfo (11.4.1):
     - React-Core
   - react-native-pager-view (6.4.1):
     - DoubleConversion
@@ -1690,9 +1690,7 @@ PODS:
     - React
   - RNPermissions (4.1.5):
     - React-Core
-  - RNReanimated (1.13.1):
-    - React
-  - RNScreens (3.29.0):
+  - RNReanimated (3.16.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1707,6 +1705,94 @@ PODS:
     - React-ImageManager
     - React-NativeModulesApple
     - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNReanimated/reanimated (= 3.16.1)
+    - RNReanimated/worklets (= 3.16.1)
+    - Yoga
+  - RNReanimated/reanimated (3.16.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNReanimated/reanimated/apple (= 3.16.1)
+    - Yoga
+  - RNReanimated/reanimated/apple (3.16.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNReanimated/worklets (3.16.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNScreens (4.4.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
     - React-rendererdebug
     - React-utils
     - ReactCodegen
@@ -1735,6 +1821,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
   - RNSVG (15.7.1):
+    - React-Core
+  - RNSwanBrowser (0.4.1):
     - React-Core
   - RNVectorIcons (10.2.0):
     - DoubleConversion
@@ -1869,6 +1957,7 @@ DEPENDENCIES:
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNShare (from `../node_modules/react-native-share`)
   - RNSVG (from `../node_modules/react-native-svg`)
+  - "RNSwanBrowser (from `../node_modules/@swan-io/react-native-browser`)"
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - RNZipArchive (from `../node_modules/react-native-zip-archive`)
   - SSZipArchive
@@ -2067,6 +2156,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-share"
   RNSVG:
     :path: "../node_modules/react-native-svg"
+  RNSwanBrowser:
+    :path: "../node_modules/@swan-io/react-native-browser"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   RNZipArchive:
@@ -2119,7 +2210,7 @@ SPEC CHECKSUMS:
   react-native-document-picker: 7343222102ece8aec51390717f47ad7119c7921f
   react-native-image-picker: 8cb4280e2c1efc3daeb2d9d597f9429a60472e40
   react-native-image-resizer: d9fb629a867335bdc13230ac2a58702bb8c8828f
-  react-native-netinfo: 076df4f9b07f6670acf4ce9a75aac8d34c2e2ccc
+  react-native-netinfo: f0a9899081c185db1de5bb2fdc1c88c202a059ac
   react-native-pager-view: c476f76d54f946df5147645e902d3d7173688187
   react-native-safe-area-context: 851c62c48dce80ccaa5637b6aa5991a1bc36eca9
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
@@ -2164,10 +2255,11 @@ SPEC CHECKSUMS:
   RNLocalize: 4f22418187ecd5ca693231093ff1d912d1b3c9bc
   RNPDF: 8526c7210ff375c29d2461c51945e2f5480f7b60
   RNPermissions: 4da8c626e4ac9d71c1a199d500d52dd54da62e38
-  RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
-  RNScreens: ed210360c4737cca8f562628d2ed0c97a0be786a
+  RNReanimated: f42a5044d121d68e91680caacb0293f4274228eb
+  RNScreens: e52d2e7e5fa29266d6f8f68e8229452e5b2f4236
   RNShare: d4f2ec7039556f046a5e9552be8a307a5ff1b567
   RNSVG: 4590aa95758149fa27c5c83e54a6a466349a1688
+  RNSwanBrowser: af8718931e79c8077be3cf021d1bc270ae666503
   RNVectorIcons: 6382277afab3c54658e9d555ee0faa7a37827136
   RNZipArchive: 7bb4c70d6aa2dd235212c0a4a3de0a4e237e2569
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
