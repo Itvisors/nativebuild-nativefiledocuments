@@ -1,7 +1,7 @@
 {
     "react-native-view-pdf": "0.14.0",
     "react-native-view-shot": "4.0.3",
-    "@dr.pogodin/react-native-fs": "2.26.0",
+    "react-native-blob-util": "0.21.2",
     "react-native-file-viewer": "2.1.5",
     "react-native-zip-archive": "7.0.1",
     "react-native-document-picker": "9.3.1",

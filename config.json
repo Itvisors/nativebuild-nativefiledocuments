@@ -124,7 +124,7 @@
         }
     },
     "appVersion": "1.0.0",
-    "buildNumber": 49,
+    "buildNumber": 50,
     "runtimeUrl": "https://nativefiledocument-sandbox.mxapps.io",
     "hermesEnabled": true,
     "cookieEncryptionEnabled": false

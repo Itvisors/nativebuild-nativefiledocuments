@@ -7,7 +7,6 @@
     "configure": "native-mobile-toolkit configure --config-path='./config.json' --verbose"
   },
   "dependencies": {
-    "@dr.pogodin/react-native-fs": "2.26.0",
     "@gorhom/bottom-sheet": "^5.1.1",
     "@mendix/native": "9.0.1",
     "@op-engineering/op-sqlite": "9.2.7",
@@ -24,6 +23,7 @@
     "@react-navigation/native": "6.1.18",
     "@swan-io/react-native-browser": "0.4.1",
     "react-native": "0.77.1",
+    "react-native-blob-util": "0.21.2",
     "react-native-device-info": "13.0.0",
     "react-native-document-picker": "9.3.1",
     "react-native-fast-image": "8.6.3",
